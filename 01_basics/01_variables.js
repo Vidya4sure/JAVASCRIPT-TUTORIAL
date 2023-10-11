@@ -32,4 +32,4 @@ because of issue in block scope and functional scope
 
 
 console.table([accountId , accountEmail , accountPassword , accountCity , accountState ])
-// By using above console.table the output arranged in table order.
+// By using above console.table the output arranged in table order. 
