@@ -1,4 +1,4 @@
-//  [CONVERSION OF DATA TYPES]
+//  [CONVERSION OF DATA TYPES] && [OPERATIONS]
 /*
  Let say I want to store a score of a game match 
 */
@@ -66,3 +66,51 @@ let someNumer = 33
 let stringNumber = String(someNumer)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+
+// ************************** OPERATIONS *********************
+console.log("From here output of operation");
+
+let value = 3 
+
+let negValue = -value
+console.log(negValue);
+
+
+// Basic Arithimatic Operation 
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2); // 2 raise to power 2 value = 4
+console.log(2**3); // 2 raise to power 3 value = 8
+console.log(2/3); 
+console.log(2%3); 
+
+
+// Some confusing conversion 
+console.log("some confusing type conversion");
+console.log("1" + 2);
+console.log(1 + "2");
+console.log (2 + '3');
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+// This code are good for examination, but not good for real world
+console.log(3 + 4 * 5 % 3);
+
+// Some tricky and confusion conversion uneccesary 
+console.log(true);
+console.log(+true);
+console.log(+false);
+console.log(+"");
+// ** we should never do this ! 
+
+
+// prefix and suffix study about this in mdn
+// increment and decrement 
+let gameCounter = 100 ;
+gameCounter++ ;
+console.log(gameCounter);
+
+//Go to mdn and learn about prefix and suffix 
+// And also about type conversion
