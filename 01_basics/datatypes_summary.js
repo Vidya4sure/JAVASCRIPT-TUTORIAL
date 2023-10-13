@@ -48,3 +48,7 @@ const myFunction = function (){
 console.log(typeof bigNumber);  // this will give 'bigint'
 console.log(typeof outsideTemp); // this will give 'object'
 console.log(typeof myFunction);
+
+
+// Assignment read ECMA datatype operator 
+// Also write  the above note with good examples 
