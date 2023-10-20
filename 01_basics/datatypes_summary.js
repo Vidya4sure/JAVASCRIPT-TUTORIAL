@@ -1,9 +1,11 @@
+// [THIS IS SUMMARY OF DATA TYPE]
+
 /*
  [PRIMITIVE DATA TYPE]
-*/
 
-// 7 Types : String, Number, Boolean , null, undefined, Symbol
-//           BigInt 
+ 7 Types : String, Number, Boolean , null, undefined, Symbol , BigInt 
+             
+*/
 
 const score = 100
 const scoreValue = 100.3
@@ -13,6 +15,8 @@ const outsideTemp = null
 let userEmail ;
 let userPassword = undefined
 
+
+// 'Symbol' used for data type unique
 const id = Symbol ('123')
 const anoterId = Symbol ('123 ')
 
@@ -28,11 +32,9 @@ console.log(id === anoterId);  // value come false
 
 /*
  [NON-PRIMITIVE]  Reference
+  Array, Objects , Functions
 */
 
-/*
- Array, Objects , Functions
-*/
 
 const heros = ["perman" , "mightraju" , "astroboy"]
 let myObj = {
