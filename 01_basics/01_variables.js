@@ -3,7 +3,10 @@
 
 /*
 ## [Variables] : named container for storing data (Values).
- 
+  - let 
+  - const [Cannot change value further]
+  - var [AVOID USING THIS !!]
+  - we can directly declare any this apart from using above variables.
 */
 
 let temp  // assigned (undefined)
@@ -17,7 +20,7 @@ let accountState
 
 accountCity = "Ranchi" // Prefer not to declare by this type 
 
-// accountId  = "2" // not allowed 
+// accountId  = "2" // not allowed  // Here we cannot change 'const' value.
 
 accountEmail = "mawayshi@gmail.com"
 accountPassword = "1010101"
