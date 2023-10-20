@@ -1,6 +1,6 @@
  // --[DATA TYPES]--
 
-"use strict" ; // treat all JS Code as newer version 
+"use strict" ; // treat all JS Code as newer version  // Not mandantory 
 
 // alert (3 + 3) // we are using nodejs , not browser
 
