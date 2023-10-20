@@ -1,7 +1,7 @@
 //  [CONVERSION OF DATA TYPES] && [OPERATIONS]
 /*
- Let say I want to store a score of a game match but the user puts the different input 
- So how can i convert this input to one data types
+ Let say I want to store a score of a game match but the user puts the different datatype in input 
+ So how can i convert this input to one (required) data types.
 */
 
 // case 1 
@@ -14,13 +14,13 @@ let score2 = "33"  // Someone puts this in String value
 let score3 = "33abc" // Someone put string and number value 
 
 // case 4 
-let score4 = null
+let score4 = null // Someone puts null type 
 
 // case 5 
-let score5 = true
+let score5 = true // Someone puts boolean type 
 
 // case 6 
-let score6 = undefined
+let score6 = undefined // Someone puts undefined 
 
 // Checking the typeof 
 // -For case 1
@@ -35,7 +35,8 @@ console.log(typeof (score3))
 
 // Now we pass all the above score and check the type and value if I want only number 
 // Here we are converting abover score in number.
-let valueInNumber = Number(score3)
+
+let valueInNumber = Number(score3) 
 console.log(typeof valueInNumber);
 console.log(valueInNumber)
 
@@ -50,6 +51,8 @@ console.log(valueInNumber)
 
 */
 
+
+// Want this output in boolean 
 let isLoggedIn = 1 
 
 
@@ -63,6 +66,8 @@ console.log(booleanIsLoggedIn);
  - "Vidya" => true 
 */
 
+
+// Want this output in string
 let someNumer = 33 
 
 // Converting the above type into string
@@ -71,9 +76,11 @@ console.log(stringNumber);
 console.log(typeof stringNumber);
 // Will give the type of to String 
 
-// ************************** OPERATIONS *********************
-console.log("From here output of operation");
+// ************************** [OPERATIONS] *********************
+console.log("From here output of operation"); // Used for convieance 
 
+
+// Want to convert this in negative value 
 let value = 3 
 
 let negValue = -value
@@ -98,6 +105,7 @@ console.log(a + b);
 // this will give the output of 30. which is a basic arithitmatic 
 
 // Some confusing conversion 
+// [AVOID USING THESE TYPE OF CONVERSION OR OPERATIONS]
 console.log("some confusing type conversion");
 console.log("1" + 2);
 console.log(1 + "2");
@@ -106,7 +114,7 @@ console.log("1" + 2 + 2);
 console.log(1 + 2 + "2");
 
 // This code are good for examination, but not good for real world
-console.log(3 + 4 * 5 % 3);
+console.log(3 + 4 * 5 % 3); // [NOT A GOOD PRACTICE]
 
 // Some tricky and confusion conversion uneccesary 
 console.log(true);
