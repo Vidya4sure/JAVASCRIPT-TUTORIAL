@@ -1,4 +1,5 @@
 // [MEMORY MANGEMENT IN JAVASCRIPT]
+// [HOW MEMORY IS STORED IN JAVASCTRIPT]
 
 /*
  # There are two types of memories 
