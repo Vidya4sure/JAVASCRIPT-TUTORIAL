@@ -96,3 +96,47 @@ console.log(Object.values(tinderUser));
 // For checking the properties which are contain in object we also have method 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true 'isLoggedIn' is present in the tinderUser object 
 
+console.log(Object.entries(tinderUser)); // Used very less 
+
+// *****************
+
+// Understanding Objects is good because after it is helps in API 
+// Destructing of objects 
+
+const course = {
+    coursename : "dumb coders",
+    price : "999",
+    courseInstructure : "vidya"
+}
+
+course.courseInstructure // by this method we will use this // but there is a problem for a long time that we have to use again and again 
+// there is another syntax for using objects values 
+
+// const {key} = objectname
+const {} = course
+// let say I want to access courseInstructure value 
+const {courseInstructure} = course
+console.log(courseInstructure);
+
+// let say 'courseInstructure' name is very long for me and i want to destructure it 
+// Here's the syntax for destructing
+const {price: rate} = course // here i destructure or rename of key of an object course 
+console.log(rate); // and here i can access with rename key 
+// console.log(price); // once you destructure it you cannot access with his old name [just assumption]
+
+
+// *********************
+// In json there happen an API call we will understand this later on
+// sytax for json 
+{
+    "name" = "vidya"
+    "coursename" = "js in hindi"
+    "price" = "free"
+}
+
+// Not always you will get an API in object format you will also get in array formate
+[
+    {},
+    {},
+    {},
+]
