@@ -42,3 +42,4 @@ console.log(newDate.toLocaleString());
 
 let myTimeStamp = Date.now()
 console.log(myTimeStamp); // 1700234496899 - This is a calculated milisecond from january 1 1970 midnight 
+
