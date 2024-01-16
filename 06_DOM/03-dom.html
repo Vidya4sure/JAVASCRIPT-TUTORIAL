@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Chai aur code  | DOM</title>
+</head>
+<body style="background-color: #212121 ; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage (langName){
+       const li =  document.createElement('li')
+       li.innerHTML = `${langName}`
+       document.querySelector('.language').appendChild(li)
+    }
+
+    // here i am adding language by making function 
+    // so that it can easily repeat again and again
+    addLanguage("python")
+    addLanguage("c++")
+    addLanguage("rust")
+    addLanguage("PHP")
+
+
+    // Here this is the optimus way of adding element
+    // Less tree travers 
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName)) // create textNode
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLanguage('Go lang')
+
+    // Edit 
+    // This is first approach 
+    const secondLang = document.querySelector("li:nth-child(2)") // Here i am selection 2th li 
+    // secondLang.innerHtml =  // This is the first approach 
+
+    // This is the second approach
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    //edit 
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    // remove 
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
