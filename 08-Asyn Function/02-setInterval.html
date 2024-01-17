@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // My task is start and stop setinterval 
+
+    let sayMyName
+    function startButton(){
+        if(!sayMyName){
+            sayMyName = setInterval(function(){
+                console.log("vidya sagar");
+            } , 1000)
+        }
+    }
+    document.querySelector('#start').addEventListener('click' , startButton , false)
+
+    function stopButton(){
+       clearInterval(sayMyName)
+       sayMyName = null
+    }
+
+    document.querySelector('#stop').addEventListener('click' , stopButton , false)
+</script>
+</html>
